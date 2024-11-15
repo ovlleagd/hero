@@ -1,0 +1,54 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #FFFFFF;
+    }
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+    }
+    
+    h1, h2, h3, h4, h5, h6, p {
+        margin: 0;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+
+
+    button {
+        cursor: pointer;
+    }
+
+    /*------common-----*/
+    .container {
+        max-width: 320px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        .container {
+            min-width: 768px;
+            margin: 0 auto;     
+        }
+    }
+
+    @media screen and (min-width: 1158px){
+        .container {
+            min-width: 1158px;
+            padding: 0 15px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+
+    /* --------hero------- */
+
+    .hero {
+        background-color: blue;
+    }
