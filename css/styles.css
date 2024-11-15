@@ -59,6 +59,13 @@ body {
         padding-bottom: 0;
     }
 
+    .hero-container {
+        display: flex;
+	    flex-direction: column;
+	    justify-content: flex-start;
+	    align-items: normal;
+    }
+
     .hero-block {
         width: 335px;
         display: flex;
@@ -85,18 +92,48 @@ body {
         margin-bottom: 28px;
     }
 
-    .hero-item-images {
+    .hero-list {
+        display: flex;
+    }
 
+    .hero-item-images {
+        border-radius: 100%;
+        stroke-width: 2px;
+        stroke: #fbfbfb;
+    }
+
+    #foto1,#foto2,#foto3 {
+        position: relative; 
+    }
+
+    #foto2 {
+        left: -10px;
+    }
+
+    #foto3 {
+        left: -20px;
     }
 
     @media screen and (min-width: 768px) {
+        .hero-container {  
+            flex-direction: row;   
+        }
+        
         .hero-block {
             width: 557px;
+            margin-right: 11px;
         }
+
+        .hero-list {
+            
+        }
+
+        
     }
     
     @media screen and (min-width: 1280px) {
         .hero-block {
             width: 597px;
+            margin-right: 407px;
         }
     }

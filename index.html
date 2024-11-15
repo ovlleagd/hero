@@ -8,50 +8,51 @@
 </head>
 <body>
   <section class="hero">
-    <div class="container">
+    <div class="container hero-container">
       <div class="hero-block">
-      <h1 class="hero-title">Welcome to our<br /> <span class="hero-title-collection">collection</span> of<br /> premium watches  
-      </h1>
-      <p class="hero-text">
+        <h1 class="hero-title">Welcome to our<br /> <span class="hero-title-collection">collection</span> of<br /> premium watches  
+        </h1>
+        <p class="hero-text">
         Our watches are not just timepieces, but also an expression of your personality and lifestyle. From classic designs to modern ones, we have a watch to suit every taste and occasion.
-      </p>
-      <ul>
-        <li>
-          <picture>
-          <source
-            srcset="
-            ./images/ellipse 21-1x.jpg 1x,
-            ./images/ellipse-21-2x.jpg 2x"
-            media="(min-width: 1280px)"
-          />
-          <source
-            srcset="
-            ./images/ellipse-21-1x.jpg 1x,
-            ./images/ellipse-21-2x.jpg 2x"
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="
-            ./images/ellipse-21-1x.jpg 1x,
-            ./images/ellipse-21-2x.jpg 2x"
-            media="(max-width: 767px)"
-          />
-          <img
-            src="./images/ellipse 21-1x.jpg"
-            alt="Victoria Romashenko" 
-            width="60" 
-            height:="60" 
-            class="hero-item-images"
-          />
-        </picture>
-      </li>
-        <li>
-          <picture>
+        </p>
+      </div>
+      <ul class="hero-list">
+        <li class="hero-list-item">
+          <picture id="foto1">
+            <source
+              srcset="
+              ./images/ellipse-21-1x.jpg 1x,
+              ./images/ellipse-21-2x.jpg 2x"
+              media="(min-width: 1158px)"
+            />
+            <source
+              srcset="
+              ./images/ellipse-21-1x.jpg 1x,
+              ./images/ellipse-21-2x.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+              ./images/ellipse-21-1x.jpg 1x,
+              ./images/ellipse-21-2x.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              src="./images/ellipse-21-1x.jpg"
+              alt="victoria romashenko" 
+              width="60" 
+              height:="60" 
+              class="hero-item-images"
+            />
+          </picture>
+        </li>
+        <li class="hero-list-item">
+          <picture id="foto2">
             <source
               srcset="
               ./images/ellipse-22-1x.jpg 1x,
               ./images/ellipse-22-2x.jpg 2x"
-              media="(min-width: 1280px)"
+              media="(min-width: 1158px)"
             />
             <source
               srcset="
@@ -66,21 +67,21 @@
               media="(max-width: 767px)"
             />
             <img
-              src="./images/ellipse 22-1x.jpg"
-              alt="John Wax" 
+              src="./images/ellipse-22-1x.jpg"
+              alt="john wax" 
               width="60" 
               height:="60" 
               class="hero-item-images"
             />
           </picture>
         </li>
-        <li>
-          <picture>
+        <li class="hero-list-item">
+          <picture id="foto3">
             <source
               srcset="
               ./images/ellipse-23-1x.jpg 1x,
               ./images/ellipse-23-2x.jpg 2x"
-              media="(min-width: 1280px)"
+              media="(min-width: 1158px)"
             />
             <source
               srcset="
@@ -96,7 +97,7 @@
             />
             <img
               src="./images/ellipse-23-1x.jpg"
-              alt="Anastasia Trachuk" 
+              alt="anastasia trachuk" 
               width="60" 
               height:="60" 
               class="hero-item-images"
@@ -104,7 +105,6 @@
           </picture>
         </li>
       </ul>
-    </div>
     </div>
   </section>
 </body>
