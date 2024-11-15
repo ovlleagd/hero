@@ -4,21 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hero</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-  <div class="hero">
+  <section class="hero">
     <div class="container">
-      <h1>Welcome to our collection of premium watches</h1>
-
+      <div class="hero-block">
+      <h1 class="hero-title">Welcome to our<br /> <span class="hero-title-collection">collection</span> of<br /> premium watches  
+      </h1>
+      <p class="hero-text">
+        Our watches are not just timepieces, but also an expression of your personality and lifestyle. From classic designs to modern ones, we have a watch to suit every taste and occasion.
+      </p>
+      <ul>
+        <li>
+          <picture>
+          <source
+            srcset="
+            ./images/ellipse 21-1x.jpg 1x,
+            ./images/ellipse-21-2x.jpg 2x"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+            ./images/ellipse-21-1x.jpg 1x,
+            ./images/ellipse-21-2x.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+            ./images/ellipse-21-1x.jpg 1x,
+            ./images/ellipse-21-2x.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img
+            src="./images/ellipse 21-1x.jpg"
+            alt="Victoria Romashenko" 
+            width="60" 
+            height:="60" 
+            class="hero-item-images"
+          />
+        </picture>
+      </li>
+        <li>
+          <picture>
+            <source
+              srcset="
+              ./images/ellipse-22-1x.jpg 1x,
+              ./images/ellipse-22-2x.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+              ./images/ellipse-22-1x.jpg 1x,
+              ./images/ellipse-22-2x.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+              ./images/ellipse-22-1x.jpg 1x,
+              ./images/ellipse-22-2x.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              src="./images/ellipse 22-1x.jpg"
+              alt="John Wax" 
+              width="60" 
+              height:="60" 
+              class="hero-item-images"
+            />
+          </picture>
+        </li>
+        <li>
+          <picture>
+            <source
+              srcset="
+              ./images/ellipse-23-1x.jpg 1x,
+              ./images/ellipse-23-2x.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+              ./images/ellipse-23-1x.jpg 1x,
+              ./images/ellipse-23-2x.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+              ./images/ellipse-23-1x.jpg 1x,
+              ./images/ellipse-23-2x.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              src="./images/ellipse-23-1x.jpg"
+              alt="Anastasia Trachuk" 
+              width="60" 
+              height:="60" 
+              class="hero-item-images"
+            />
+          </picture>
+        </li>
+      </ul>
     </div>
-  </div>
+    </div>
+  </section>
 </body>
 </html>
