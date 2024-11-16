@@ -66,6 +66,11 @@ body {
 	    align-items: normal;
     }
 
+    .hero-main {
+        display: flex;
+        flex-direction: column;
+    }
+
     .hero-block {
         width: 335px;
         display: flex;
@@ -89,11 +94,23 @@ body {
     }
 
     .hero-text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 129%;
+        letter-spacing: -0.02em;
+        color: rgba(12, 12, 12, 0.7);
+        margin-bottom: 28px;
+    }
+
+    .hero-list-block {
+        display: flex;
+        width: 335px;
         margin-bottom: 28px;
     }
 
     .hero-list {
         display: flex;
+        margin-right: 85px;
     }
 
     .hero-item-images {
@@ -114,9 +131,36 @@ body {
         left: -20px;
     }
 
+    .hero-scroll {
+        align-content: flex-end;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 129%;
+        letter-spacing: -0.02em;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #0c0c0c;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        float: right;
+    }
+
+    .hero-scroll:hover {
+        color: #404bbf;
+    }
+    
+    .hero-scroll:focus {
+        color: #404bbf;
+    }
+
+    .hero-rectangle {
+        width: 335px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     @media screen and (min-width: 768px) {
-        .hero-container {  
-            flex-direction: row;   
+        .hero-main {  
+          flex-direction: row;
         }
         
         .hero-block {
@@ -124,11 +168,20 @@ body {
             margin-right: 11px;
         }
 
-        .hero-list {
-            
+        .hero-title {
+            font-size: 70px;
+            line-height: 86%;
         }
 
-        
+        .hero-text {
+            font-size: 16px;
+            line-height: 125%;
+        }
+
+        .hero-scroll {
+            font-size: 20px;
+            line-height: 100%;
+        } 
     }
     
     @media screen and (min-width: 1280px) {
@@ -136,4 +189,10 @@ body {
             width: 597px;
             margin-right: 407px;
         }
+
+        .hero-title {
+            font-size: 72px;
+            line-height: 87%;
+        }
+
     }
