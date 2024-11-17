@@ -110,7 +110,8 @@ body {
 
     .hero-list {
         display: flex;
-        margin-right: 85px;
+        margin-right: 105px;
+        width: 155px;
     }
 
     .hero-item-images {
@@ -178,10 +179,32 @@ body {
             line-height: 125%;
         }
 
+        .hero-list-block {
+            flex-direction: column;
+            width: 136px;
+        }
+
+        .hero-list {
+            width: 136px;
+            height: 60px;
+            margin-right: 0;
+            margin-bottom: 180px;
+        }
+
+        .hero-item-images {
+            width: 56px;
+            height: 56px;
+        }
+
         .hero-scroll {
+            width: 102px;
             font-size: 20px;
             line-height: 100%;
+            margin-left: 45px;
+            
         } 
+
+        
     }
     
     @media screen and (min-width: 1280px) {
@@ -193,6 +216,19 @@ body {
         .hero-title {
             font-size: 72px;
             line-height: 87%;
+        }
+
+        .hero-list {
+            width: 146px;
+        }
+
+        .hero-list-block {
+            width: 146px;
+        }
+
+        .hero-item-images {
+            width: 60px;
+            height: 60px;
         }
 
     }
